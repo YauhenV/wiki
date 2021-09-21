@@ -199,3 +199,38 @@ LABEL:
 
 
 Тег <form>
+<form action="/kniga/war-and-peace">
+
+    <input name="name" placeholder="Ваше ФИО"><br>
+    <input name="secret" type="hidden">
+    <button type="submit">Отправить</button>
+    <button type="reset">Сбросить</button>
+
+</form>
+-
+Method:
+- get (по умолчанию) - предназначен для получения требуемой информации и передачи данных в адресной строке (граничение в 4 Кб).[поле1]=[значение1]&[поле2]=[значение2]
+- post - посылает на сервер данные в запросе браузера. Большие объёмы данных используются в форумах, почтовых службах, заполнегии базы данных, при пересылке файлов и др.
+-
+<form method="post">
+    <input value="Артём" name="firstName">
+    <button >Отправить</button>
+</form>
+-
+Валидация форм - в HTML 5 появилась такая возможность.
+<form metod="post">
+    <input type="email" placeholder="email" required>
+    <input type="tel" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="2-123-312" required>
+    <button>Отправить</button>
+</form>
+-
+Tabindex
+<p>Нажмите кнопку Tab  для перехода между элементами</p>
+<button>Шестой</button><br>
+<button>Седьмой</button><br>
+<button tabindex="2">Второй</button><br>
+<button tabindex="1">Первый</button><br>
+<button tabindex="0">Нулевой</button><br>
+
+
+Интернационализация.
