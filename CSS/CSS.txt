@@ -15,3 +15,53 @@ cтруктура CSS
     свойство: значение;
     свойство: значение;
 }
+-
+Селектор тега
+div { color: red }
+-
+Cелектор класса
+<div class="heading red">Красный заголовок</div>
+
+div.heading {
+    font-size: 50px;
+}
+div.red {
+    color: red;
+}
+-
+Селектор идентификатора
+<div id="red">Красный заголовок</div>
+div#red {
+    color: red;
+}
+-
+id vs class
+class - для визуального стиля
+id - для логических или для функциональных элементов (связка for-id у label-input)
+-
+Универсальный селектор
+* {
+    color: red;
+}
+-
+Комбинирование селекторов
+div .big { color: red; }
+p .div .big { color: red; }
+-
+Селектор атрибутов
+[href] { color:red; }
+[href ="http://ya.ru"] {color: red;} - по значению атрибута
+[href ="http://ya.ru"] {color: red;} - по содержанию определенного атрибута
+
+
+Псевдоэлементы и псевдоклассы.
+Динамические псевдоклассы
+a:link {color: blue;}
+a:active {color: red;}
+a: hover {color: green;}
+a: visited {color: purple;}
+a: focus {color: yellow;}
+:enabled
+:disabled
+:checked
+:indeterminate
