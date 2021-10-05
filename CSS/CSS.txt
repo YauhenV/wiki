@@ -18,7 +18,7 @@ cтруктура CSS
 -
 Селектор тега
 div { color: red }
--
+-d
 Cелектор класса
 <div class="heading red">Красный заголовок</div>
 
@@ -51,7 +51,7 @@ p .div .big { color: red; }
 Селектор атрибутов
 [href] { color:red; }
 [href ="http://ya.ru"] {color: red;} - по значению атрибута
-[href ="http://ya.ru"] {color: red;} - по содержанию определенного атрибута
+[href^ ="http://"] {color: red;} - по содержанию определенного атрибута
 
 
 Псевдоэлементы и псевдоклассы.
@@ -75,7 +75,7 @@ input.example {padding: 5px;}
 
 
 Структурные псевдоклассы
-:root
+		
 :first-child/last-child
 :nth-child/nth-last-child(2n+1)
 :nth-of-type/nth-last-of-type(-n+4)
