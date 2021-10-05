@@ -69,3 +69,32 @@ avenue - проспект
 -
 Не употребляется с названием стран, с числами и именами.
 Russia (страна), four (число), Kate (имя).
+
+
+Который сейчас час?
+В России:
+Утро: 6-12 часов
+День: 12-18 часов
+Вечер: 18 - 24 часов
+Ночь: 0-6 часов
+-
+В Англии:
+Утро - morning 0-12 O'clock 
+День - afternoon 12- 17 O'clock
+Вечер - evening 17 O'clock - dusk (закат)
+Ночь - night 17-0
+-
+В Америке:
+Утро - morning 0-12 O'clock
+День - afternoon 12- 18 O'clock
+Вечер - evening 18 O'clock
+Ночь - night 
+-
+Полдень - NOON
+Расвет - dawn
+Полночь - midnight
+Полудень - midday
+-
+В америке сутки делят на две части AM / PM
+AM (ante meridiem) before nonn - до полудня
+PM (post meridiem) after noon - после полудня 
