@@ -212,3 +212,140 @@ div {
 <style>@import (<url to css>)</style> в другой файл
 
 <link rel="stylesheet" href="<url to css>"> - файл с правилами CSS (самый правильный вариант)
+
+
+Шрифты и текст
+Растовые шрифты и Векторные шрифты.
+Растовая шрифты (старые, пиксельные)
+Векторные шритфты (современные, математические)
+-
+Анатомия шрифта 
+- Базовая линия (baseline)
+- Высота прописных знаков (cap height)
+- Высота строчных знаков (x-height)
+- Интерлиньяж, межстрочный интервал (leading)
+- Кегельная площадка (em square)
+
+
+Размер шрифта
+- Гарнитура
+-
+Ключевые слова бывают:
+Абсолютные (xx-small, large)
+Относительные (smaller, large)
+Единицы измирения длины (px, em, %, rem)
+-
+Высота строки - устанавливается двумя типами значения: единицами измирения длины или множителем.
+.line-height-mult {line-height: 1,5;}  - самый предпочтительные вариант
+.line-height-em {line-height: 1,5em;} 
+.line-height-pixel {line-height: 30 px;} 
+Расстояние между буквами
+.zero{letter-spacing: normal;}
+Расстояние между словами
+.first {word-spacing: -18px;}
+
+
+Начертание шрифтов
+Наклон, Насыщенность, Плотность
+-
+Капитель-начертание, где строчные знаки выглядят как умкньшенные прописные.
+.h3 {font-variant: normal}
+.h3 {font-variant: nsmall-caps}
+Наклоном можно управлять при помощи тега font-style
+font-style: normal;
+	:oblique;
+	:italic;
+Насыщенность
+font-weight: normal;
+	:bold;
+	:light;
+	:100-:900
+Плотность
+font-stretch: ultra-condensed;
+	:extra-condensed;
+	noraml;
+	....
+Плотность не работает в Safari и совсем недавно появилась в Хроме раньше было так:
+.block {
+	font-family: 'My Font Condensed'
+}
+ИЛИ
+.block {
+	font-family: 'My Font Expanded'
+}
+
+
+Семейства шрифтов
+Шрифты в OC - существует ряд шрифтов, которые есть почти в каждой OC, таким образом их использование считается наиболее безопасным.
+Без засечек - Arial
+С засечками - Times New Roman
+Моноширинные - Courier New
+body {
+	font-family: 'Arial';
+}
+body {
+	font-family: Arial, Helvetica, Calibri;
+}
+-
+Классификация шрифтов:
+serif - с засечками
+sans-serif - без засечек
+cursive - рукописные
+monospace - моноширинные
+fantasy - декоративные 
+body {
+	font-family: Arial, Helvetica, Calibri, sans-serif;
+}
+-
+Нестандартные шрифты - всегда можно подключить на страницу с помощью at-правила @font-face
+@font-face{
+	font-family: myCustomFont;
+	src: url(myCustomFont.woff);
+}
+body {
+	font-family: myCustomFont, sans-serif;
+}
+Если есть на локальной машине (ПК пользователя)
+@font-face{
+	font-family: myCustomFont;
+	src: local('Nativ Custom Font')
+	     url(myCustomFont.woff);
+}
+Можно указать диапазон используемых в шрифте символов unicode-range:
+@font-face{
+	font-family: myCustomFont;
+	unicode-range: U+000-5FF; /*только латинские символы*/
+	src: local('Nativ Custom Font')
+	     url(myCustomFont.woff);
+}
+Проблемы: 
+1) Шрифты жирного и курсивного начертания нужно подключать отдельно
+Но есть решение: мы можем привязать определенный файл к определенному начертанию с помощью свойства font-weight и font-style указанных в @font-face
+@font-face{
+	font-family: Sooo Good Font;
+	src: url(soooGoodFont.woff);
+	font-style: normal; /*обычный*/
+}
+@font-face{
+	font-family: Sooo Good Font;
+	src: url(soooGoodFontItalic.woff);
+	font-style: italic; /*курсивный*/
+}
+
+body {font-family: Sooo Good Font;}
+footer {font-style: italic;}
+-
+2) Раньше, что бы подключить шрифты на страницу, приходилось использовать аж 4 формата: .svg, .ttf, .woff и .eot.
+сейчас все куда лучше, но Android 4.3 - не понимают формат .woff, и для них еще нужно подключить .ttf:
+Генерация форматов шрифтов. Существуют сервисы-генераторы, которые помогают собрать весь необходимый пакет нужных форматов в несколько кликов. Самый популярный - FontSquirell.
+А еще существуют сервисы, которые предоставляют шрифты. Самый популярный - Google Fonts
+-
+3) Шрифты - файлы, а файлы нужно загружать. Более того, когда шрифт загружен на страницу, он не применяется сразу.
+FOIT - Flash of invisible text.
+
+
+Свойство font
+font: variant (необязат) style (необязат) weight (необязат) size (обязат) / line-height (необязат) family (обязат)
+body {
+font: small-caps italic 700 14px/ 20px Arial, sans-serif;
+}
