@@ -98,3 +98,48 @@ Russia (страна), four (число), Kate (имя).
 В америке сутки делят на две части AM / PM
 AM (ante meridiem) before nonn - до полудня
 PM (post meridiem) after noon - после полудня 
+
+
+Профессии 
+Профессии оканчиваются на окончания er/or/man/ist
+-
+er/or
+teacher, manager, lawyer, engineer, actor
+-
+ist
+journalist, chemist
+-
+man
+policeman, sportsman
+-
+Перед профессии всегда ставится неопределенный артикль a/an
+
+
+Порядковые числительные - Ordinal numerals.
+Они образуются путем добавления окончания -th к количествежнному числительному.
+four - fourth (четыре - четвертый)
+eleven - eleventh (11 - 11-й)
+-
+Но есть и исключения.
+-
+one - first (один - первый)
+two - second (два - второй)
+three - third (три - третий)
+five - fifth (пять - пятый)
+eight - eightth (восемь - восьмой)
+nine - ninth (девять - девятый)
+twelve - twelvfth (двенадцать - двенадцатый)
+-
+При образовании порядковых числительных из количественных, которые заканчиваются на -y, конечная -y меняется на i, и перед окончанием -th добавляется ещё и буква e.
+-y / -ieth
+-
+eighty - eightieth (80 - 80-й)
+-
+В больших числительных окончание веняеться только у последнего:
+Four hundred twenty one - Four hundred twenty first
+Five thousand one hundred eleven - Five thousand one hundred eleventh
+-
+Если числительные писать цифрами то в порядковых числительных указывается последний две буквы
+1st
+2nd
+4th
