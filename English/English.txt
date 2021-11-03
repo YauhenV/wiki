@@ -67,6 +67,23 @@ boys, girls, ladies, persons, pencils
 a mistake - mistakes
 
 
+Этот, тот, эти, те.
+this - этот, эта, это
+these - эти
+
+that - тот, та, то
+those - те
+
+this - these
+that - those
+
+
+
+Man - Men
+Man (is) един. число Мужчина
+Men (are) мн. число Мужчины
+
+
 
 
 Мой адрес
@@ -257,3 +274,30 @@ What does it mean? — Что это означает?
 How do you do this? — Как ты это делаешь?
 Where does she get these ideas? — Откуда она берёт эти идеи?
 Why does it cost so much? — Почему это так дорого стоит?
+
+Мастер-класс по произношению. Как звучит -(e)s
+Один из простых, но эффективных способов улучшить своё произношение — правильно произносить -(e)s. К сожалению, русскоязычные изучающие не всегда справляются с этой задачей — в нашей привычке «оглушать» окончание и произносить звук [s], хотя во многих случаях правильно произносить звонкий звук [z].
+*
+-(e)s встречается у глаголов в 3 лице единственного числа в Present Simple:
+She likes ice cream. — Она любит мороженое.
+My friend works here. — Мой друг работает здесь.
+Fred makes dinner every day. — Фред готовит ужин каждый день.
+*
+-(e)s также встречается у существительных во множественном числе:
+I like cakes. — Я люблю торты.
+The girls look beautiful. — Девочки выглядят прекрасно.
+Wash your hands. — Помой руки.
+Произношение -(e)s зависит от предшествующего звука
+*
+*
+глухой согласный звук + [s]
+sleeps, hopes, likes, thinks, coughs, clips, cakes, months
+*
+звонкий согласный звук + [z]
+robs, gives, rides, claims, seems, wives, clothes
+*
+гласный звук + [z]
+sees, does, plays, lays, grows, throws
+*
+звуки [s], [z], [ʃ], [ʒ], [tʃ], [dʒ] + [ɪz]
+kisses, pleases, wishes, watches, changes, faces, uses, taxes

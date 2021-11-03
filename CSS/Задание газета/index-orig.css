@@ -47,12 +47,17 @@ body
 
 .header__weather-title
 {
-    margin: 0;
+    font: 800 117% "Space Mono", monospace;
+	text-align: center;
+	margin: 0;
 }
 
 .header__weather-text
 {
-    margin: 0;
+	margin: 0;
+	text-align: justify;
+	font-size: 80%;
+	line-height: 1.1em;;
 }
 
 .header__title
@@ -92,6 +97,11 @@ body
     display: flex;
 }
 
+div .article__title_font_racing
+{
+	font: 800 200% "Racing Sans One", cursive;
+}
+
 /*––––––––––––––––––Блок статьи–––––––––––––––––––––*/
 p {
 	margin: 0;	
@@ -100,18 +110,16 @@ p {
 {
     margin-top: 0;
     margin-bottom: 10px;
-}
-.left-column .article__title
-{
 	font: 800 320% "Six Caps", sans-serif;
 }
-.left-column .article__subtitle 
+
+.article__subtitle 
 {
 	font:800 117% "TimesNewRoman", serif;
 	text-align: center;
 }
 
-.left-column .article__content
+.article__content
 {
 	text-indent: 1em;
 	font-size: 80%;
@@ -129,6 +137,9 @@ p {
 {
     margin-top: 10px;
     margin-bottom: 4px;
+	text-align: justify;
+	font-style: italic;
+	
 }
 
 .article__author
@@ -138,6 +149,7 @@ p {
 	font-size: 80%;
 	text-align: center;
     margin-top: 10px;
+	column-span: all;
 }
 
 .article__continue
@@ -146,6 +158,7 @@ p {
 	font-size: 80%;
 	font-style: italic;
 	text-align: center;
+	column-span: all;
 }
 
 .article__image
@@ -166,6 +179,22 @@ p {
     margin: 10px 0;
 }
 
+div .article__title_font_farsan
+{
+	font: 800 230% "Farsan", cursive;
+}
+
+.article_columns_two .article__content
+{
+	column-count:2;
+	column-gap: 15px;
+}
+
+.article__image-caption
+{
+	text-decoration:underline;
+}
+
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
 .main-photo__wrapper
 {
@@ -180,11 +209,21 @@ p {
 .main-photo__title
 {
     margin: 0;
+	font-size: 117%;
+	font-weight: 800;
 }
 
 .main-photo__desc
 {
     margin-bottom: 20px;
+	font-size: 80%;
+	
+}
+.main-photo__caption
+{
+	font-size:70%;
+	text-align:right;
+	text-transform: uppercase;
 }
 
 /*––––––––––––––––––Линия разделения––––––––––––––––*/
