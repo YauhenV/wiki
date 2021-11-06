@@ -572,3 +572,327 @@ c - наклон по вертикали (skewY())
 d - изменение размера по вертикали (skaleY())
 tx - смещение по горизонтали в пикселах (translateX())
 ty - смещение по вертикали в пикселах (translateY())
+
+
+Переходы
+Переходы - это анимация от одного набора CSS свойств к другому. Для перхода необходимо:
+- Два набора свойств:
+	начальный набор свойств (color: #f00;)
+	конечный набор свойств (color: #00f;)
+- Свойства transition - описание свойств и характеристик анимации перехода
+- Инициатор - действие, которое вызывает изменение от одного набора свойств к другому (:hover, :target, :focus, :active).
+*
+.button {
+	/*Свойство перехода*/
+	transition-property: transform;
+	/*Длительность перехода*/
+	transition-duration: 0.3s;
+}
+.button:hover {
+	transform: scale(1.2);
+}
+*
+Можно задавать неськолько свойств
+.button {
+	/*Свойство перехода*/
+	transition-property: transform, background-color;
+	/*Длительность перехода*/
+	transition-duration: 0.3s, 300ms;
+	/*		     .3s, .3s;	*/
+	background-color: #ccc;
+}
+.button:hover {
+	transform: scale(1.2);
+	background-color: #f00;
+}
+*
+Задержка перехода
+transition-duration: 0.3s, 500ms;
+transition-delay: 0s, 0.5s; /*Можно указать задержку для каждого свойства, либо одну задержку для всех свойств*/
+*
+Тип перехода
+.button {
+	/*Свойство перехода*/
+	transition-property: transform;
+	/*функция положения объекта от времени*/
+	transition-timtng-function: linear;
+	/*Длительность перехода*/
+	transition-duration: 0.3s;
+}
+.button:hover {
+	transform: translateX(800px);
+	background-color: #f00;
+}
+Значения функции:
+linear
+ease /*по умолчанию выбран ease*/
+ease-in
+ease-out
+ease-in-out
+дескретные значения (действие происходит рывками)
+step-start
+step-end
+steps(10)
+steps(10, start)
+*
+Но вся анимация все равно заканчивается в одно время.
+*
+Так же можно создавать свою временную функцию. Для этого нужно воспользоваться функцией cubic-bezier. (Кривая Безье)
+.rocket {
+	transition-property: transform;
+	/*					(x1,  y1, x2,  y2);*/
+	transition-timing-function: cubic-bezier(0.98, 0, 1, 0.28);
+	transition-duration: 2s;
+}
+*
+Краткая запись
+.long {
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-delay: 1s;
+	transition-function: ease-in; 
+}
+.short {
+	/*	    property duration [timing-function] [delay]*/
+	transition: transform 0.5s ease-in 1s;
+}
+.multi-short {
+	transition: transform 0.5s ease-in,
+		    background-color 0.5s ease-in 1s;
+}
+.super-short {
+transition: all 0.5s;
+}
+
+
+Анимация
+Позволяет анимировать переходы между ключевыми кадрами.
+Для создания анимации необходимо:
+1. Определить ключевые кадры - содержат свойства, которые применяются в определенный момент времени при анимации.
+2. Применение анимации к элементу.
+*
+Ключевые кадры
+@keyframes animationName {
+	from {
+		/*css свойства для первого кадра*/
+	}
+	to {
+		/*css свойства для второго кадра*/
+	}
+
+}
+*
+Элемент непрозрачный переходит от прозрачного к непрозрачному
+.box {
+	animation-name: show;
+	animation-duration: 2s;
+}
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+*
+Элемент сразу прозрачный когда происходит анимация он плавно становится непрозрачным, но когда анимация заканчивается элемент сновы становится прозрачным
+.box {
+	opacity: 0;
+}
+.box.visible {
+	animation-name: show;
+	animation-duration: 2s;
+}
+@keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+*
+Одну анимация можно применять к нескольким элементам
+.box1:hover {
+	anamation-name: blink;
+	animation-duration: 1s;
+}
+.box2:hover {
+	anamation-name: blink;
+	animation-duration: 5s;	
+}
+@keyframes blink {
+	from {
+		background-color: blue;
+	}
+	to {
+		background-color: green;
+	}
+}
+*
+Можно использовать не только from и to, но так же и промежуточные значения.
+.box:hover {
+	anamation-name: blink;
+	animation-duration: 5s;	
+}
+@keyframes blink {
+	from {
+		background-color: blue;
+	}
+	50% {
+		background-color: red;
+	}
+	to {
+		background-color: green;
+	}
+}
+*
+Вместо ключевых слов from и to можно указывать проценты.
+.box:hover {
+	anamation-name: blink;
+	animation-duration: 5s;	
+}
+@keyframes blink {
+	0% {background-color: blue;}
+	25% {background-color: green;}
+	50% {background-color: red;}
+	75% {background-color: yellow;}
+	100% {background-color: grey;}
+}
+*
+Если есть несколько кадров с одним и тем же свойством.
+.box:hover {
+	anamation-name: blink;
+	animation-duration: 10s;	
+}
+@keyframes blink {
+	0%, 50% {background-color: blue;}
+	25%, 75% {background-color: green;}
+	100% {background-color: grey;}
+}
+*
+если нужно установить задержку на каком то кадре.
+.box:hover {
+	anamation-name: blink;
+	animation-duration: 4s;	
+}
+@keyframes blink {
+	0% {background-color: blue;}
+	25%, 75% {background-color: green;}
+	100% {background-color: grey;}
+}
+*
+Анимировать можно несколько свойств, например прозрачность и цвет заднего фона.
+.box:hover {
+	anamation-name: show;
+	animation-duration: 2s;	
+}
+@keyframes show {
+	0% {
+		opacity: 0;
+		background-color: blue;
+	}
+	50% {background-color: green;}
+	100% {
+		opacity: 1;
+		background-color: red;
+	}
+}
+*
+Задержка анимации
+.box.move{
+	anamation-name: move;
+	animation-duration: 2s;	
+	animation-delay: 1s;
+}
+@keyframes move {
+	25%, 75% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(200%);
+	}
+}
+*
+По аналогии с переходами в анимации можно тоже задавать свою временную функцию. При помощи кривой Безье.
+.box.move {
+	animation-name: move;
+	animation-duration: 8s;
+	animation-timing-function: cubic-bezier(...);
+}
+@keyframes move {
+	0% {transform: translate (0, 0);}
+	25% {
+		transform: translate (100%, 0);
+		animation-timing-function: linear;
+	}
+	50% {transform: translate (100%, 200%);}
+	75% {
+		transform: translate (0, 200%);
+		animation-timing-function: linear;
+	}
+	100% {transform: translate (0, 0);}
+}
+*
+У анимации можно задавать количество повторений.
+.circle:hover {
+	animarion-name: zoom;
+	animarion-duration: 1s;
+	animation-iteration-count: 3;
+}
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+	}
+}
+*
+Безконечное количество повторений анимации.
+.second {
+	animation-name: second;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+}
+*
+Скачки между повторениями.
+.circle {
+	animation-name: seconds;
+	animation-duration: 1s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+}
+*
+Скачки после завершения, объект не возвращается к исходному состоянию, а зависает во втором.
+.circle {
+	animation-name: seconds;
+	animation-duration: 1s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+*
+Краткая запись
+.long {
+	animation-name: scale;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+.short {
+	animation: scale 2s easy-in-out 3 alternate 5s forwards;
+}
+.multi-short {
+	animation: scale 2s ease-in, move 2s ease-out;
+}
+*
+Управление анимацией 
+.b-heart {
+	...
+	animation: heartBeat ls ease infinite;
+}
+.b-heart:hover {
+	animation-play-state: paused;
+}
