@@ -88,8 +88,11 @@ Woman (is) един. число Женщина
 Women (are) мн. число Женщины
 
 
+Child - Children
+Child (is) един. число Ребенок
+Children (are) мн. число Дети
 
-
+People - (are) мн. число Люди
 
 
 
