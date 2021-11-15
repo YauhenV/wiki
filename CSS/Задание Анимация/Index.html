@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+	<style>
+		.animation {
+			width: 150px;
+			height: 150px;
+			background-color: #f00;
+		
+			transition-property:background-color;
+			transition-duration: 500ms;
+			transition-timing-function: linear;
+		
+			animation-name: show;
+			animation-duration: 3s;
+			animation-iteration-count: 1;
+			animation-direction: alternate;	
+			animation-fill-mode: forwards;
+			animation-iteration-count:infinite;
+		}
+		
+		@keyframes show{
+			25% {
+				transform: translateX(100px);
+			}
+			50% {
+				transform: translate(100px, 100%);
+			}
+			75%, 100% {
+				transform: translate(100px, 100%) scale(2) rotate(145deg); \*rotate(145deg)*\
+			}
+		}
+		
+		.animation:hover {
+			background-color: #ff0;
+		}
+	</style>
+</head>
+<body>
+	<div class="animation">
+</body>
+</html>
