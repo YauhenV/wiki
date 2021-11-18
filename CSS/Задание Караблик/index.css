@@ -244,6 +244,10 @@
 
 .cloud-4 {
     top: 170px;
+	animation-name: cloud4_move;
+	animation-duration: 17s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .sea {
@@ -269,4 +273,11 @@
     content: '';
     
     background: #1d7fbb;
+}
+
+@keyframes cloud4_move {
+	to {
+		transform: translateX(340%); 
+	}
+	
 }
