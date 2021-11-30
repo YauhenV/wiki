@@ -232,20 +232,39 @@
 
 .cloud-1 {
     top: 10px;
+	transform: scale(0.2);
+	animation-name: cloud1_move;
+	animation-duration: 55s;
+	animation-delay: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .cloud-2 {
     top: 50px;
+	transform: scale(-0.4, 0.4);
+	animation-name: cloud2_move;
+	animation-duration: 40s;
+	animation-delay: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .cloud-3 {
     top: 100px;
+	transform: scale(0.6);
+	animation-name: cloud3_move;
+	animation-duration: 30s;
+	animation-delay: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .cloud-4 {
     top: 170px;
+	transform: scale(-0.8, 0.8);
 	animation-name: cloud4_move;
-	animation-duration: 17s;
+	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
@@ -275,9 +294,30 @@
     background: #1d7fbb;
 }
 
-@keyframes cloud4_move {
-	to {
-		transform: translateX(340%); 
+
+@keyframes cloud1_move {
+	100% {
+		transform: scale(0.2) translateX(1500%); 
 	}
 	
+}
+
+@keyframes cloud2_move {
+	100% {
+		transform: scale(-0.4,0.4) translateX(-780%); 
+	}
+	
+}
+
+@keyframes cloud3_move {
+	100% {
+		transform: scale(0.6) translateX(550%); 
+	}
+	
+}
+
+@keyframes cloud4_move {
+	90%,100% {
+		transform: scale(-0.8,0.8) translateX(-413%); 
+	}	
 }
