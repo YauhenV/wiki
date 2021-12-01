@@ -134,6 +134,11 @@
     border-radius: 50%;
     background: #ffcf11;
     box-shadow: 0 0 100px #ffdf05;
+	
+	animation-name: sun;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .sun-wrapper {
@@ -156,6 +161,7 @@
     
     border: solid #ffcf11;
     border-width: 10px 0 10px 0;
+
 }
 
 .sun div:nth-child(2) {
@@ -319,5 +325,19 @@
 @keyframes cloud4_move {
 	90%,100% {
 		transform: scale(-0.8,0.8) translateX(-413%); 
+	}	
+}
+
+@keyframes sun {
+	from {
+		transform: rotate(0turn)
+					translateY(-50px)
+					rotate(1turn);
+				   
+	}
+	to { 
+		transform: rotate(1turn)
+					translateY(-50px)
+					rotate(0turn);
 	}	
 }
