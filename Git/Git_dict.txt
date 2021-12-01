@@ -1,0 +1,55 @@
+A
+
+B
+
+C
+
+D
+
+E
+
+F
+
+G
+git checkout [name] - комманда для выбора ветки
+git checkout -b [yourbranchname] - комманда для создания новой ветки и переключение на нее.
+git commit - комманда для создания коммита
+git branch [name] - комманда для создания новой ветки
+
+H
+
+I
+
+J
+
+K
+
+L
+
+M
+
+N
+
+O
+
+P
+
+Q
+
+R
+
+S
+
+T
+
+U
+
+V
+
+W
+
+X
+
+Y
+
+Z
