@@ -20,6 +20,12 @@
     
     background: skyblue;
     box-shadow: 0 -400px 300px -300px steelblue inset;
+	
+	animation-name: day_night;
+	animation-duration: 110s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
 }
 
 /*TODO
@@ -67,11 +73,16 @@
 
 .ship {
     position: absolute;
-    right: 0;
+    right: -100px;
     bottom: 30px;
     
     width: 100px;
     height: 36px;
+	
+	animation-name: ship_move;
+	animation-duration: 63s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .ship_smokestack {
@@ -111,22 +122,42 @@
 .smoke-1 {
     top: -25px;
     right: 44px;
+	
+	opacity:0;
+	animation-name: smoke_ship;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .smoke-2 {
     top: -25px;
     right: 42px;
+	
+	opacity:0;
+	animation-name: smoke_ship;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .smoke-3 {
     top: -25px;
     right: 49px;
+	
+	opacity:0;
+	animation-name: smoke_ship;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 .sun {
     position: absolute;
-    top: 30px;
-    right: 50%;
+    bottom: -40px;
+    right: 210px;
     
     width: 80px;
     height: 80px;
@@ -136,7 +167,7 @@
     box-shadow: 0 0 100px #ffdf05;
 	
 	animation-name: sun;
-	animation-duration: 10s;
+	animation-duration: 100s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
@@ -161,7 +192,6 @@
     
     border: solid #ffcf11;
     border-width: 10px 0 10px 0;
-
 }
 
 .sun div:nth-child(2) {
@@ -329,15 +359,51 @@
 }
 
 @keyframes sun {
-	from {
+	0% {
 		transform: rotate(0turn)
-					translateY(-50px)
-					rotate(1turn);
-				   
+					translateX(-315px)
+					rotate(-10turn);
 	}
-	to { 
+	
+				   
+	100% { 
 		transform: rotate(1turn)
-					translateY(-50px)
+					translateX(-315px)
 					rotate(0turn);
 	}	
+}
+
+@keyframes ship_move {
+	87%, 100% {
+		transform: translateX(-600%); 
+	}
+}
+
+@keyframes smoke_ship {
+	0% {
+		opacity: 1;
+	}
+	75%, 100% {
+		transform: scale(3) translateY(-100%);
+		opacity: 0;		
+	}	
+}
+
+@keyframes  day_night {
+	25% {
+		background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+	}
+	45% {
+		background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px orangered inset;
+	}
+	70% {
+		background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px transparent inset;	
+	}
+	100% {
+		background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+	}
 }
