@@ -176,7 +176,27 @@ Their - их
 Our - наш, наша, наши, наше
 
 
+Как тебя зовут?
+What is your name - как тебя зовут?
 
+В вопросе сказуемое ставится перед подлежащим.
+Is your name Kate? - Тебя зовут Кейт?
+
+What is your name?
+My name is ...
+I am ...
+
+Surname- фамилия
+
+What is your surname? - Как Ваша фамилия?
+
+
+
+Папа
+father - папа, отец.
+mother - мать, мама.
+sister - сестра.
+brother - брат.
 
 
 
@@ -478,3 +498,34 @@ he, she, it + does not (doesn’t) have
 I, we, you, they + do not (don’t) have
 
 Обратите внимание, в отрицаниях глагол have не меняет форму.
+
+
+Have или have got
+
+have, have got - иметь
+
+В разговорной речи чаще используют have got.
+I have a car = I have got a car - У меня есть машина
+
+Отрицательные и вопросительные предложения
+I have not got a car
+A don't have a car
+
+He has not got a car
+He doesn't have a car
+
+Do you have a car? - У тебя есть машина?
+Have you got a car? - У тебя есть машина?
+
+Отличия между have и have got
+- В прошедшем времени had
+Dasha had a book - У Даши были книга
+- В устойчивых выражениях have/has
+I have a bath every evening - Каждый вечер я принимаю ванну
+(have a bath - принимать ванну)
+I have got a bath - У меня есть ванна (немного не то)
+"Словарик устойчивых выражений"
+have a bath - принимать ванну
+have dinner - обедать
+have a cigarette - закуривать
+have a good time - хорошо проводить время 
