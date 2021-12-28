@@ -199,7 +199,15 @@ sister - сестра.
 brother - брат.
 
 
+Женаты
+married - женат или замужем
+I am married - Я женат. Я замужем.
+He is married. She is married
+They are married. We are married.
 
+husband - муж
+
+wife - жена
 
 
 
