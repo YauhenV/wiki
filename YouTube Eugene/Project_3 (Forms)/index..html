@@ -6,12 +6,57 @@
     </head>
 
     <body>
-       <form action="#" method="post" enctype="multipart/form-data"></form>
+        <form action="#" method="post" enctype="multipart/form-data"></form>
         
-       <input type="text" name="user_name" value="">
-    
-       <input type="password" name="user_pass" value="">
+        <div>
+            <input tabindex="1" placeholder="Подпись поля" type="text" name="user_name" value="">
+        </div>
+        <div>
+            <input type="password" name="user_pass" value="">
+        </div>
 
+        <div>
+            <p><input tabindex="2" checked type="radio" name="beer" value="lager"> Светлое пиво</p>
+            <p><input tabindex="2" type="radio" name="beer" value="dark"> Тёмное пиво</p>
+        </div>
+
+        <br>    
+        <div>
+            <p><input type="radio" name="beer2" value="lager"> Светлое пиво</p>
+            <p><input checked type="radio" name="beer2" value="dark"> Тёмное пиво</p>
+        </div>
+
+        <br>    
+        <div>
+            <p><input type="checkbox" name="car" value="yes"> Наличие авто</p>
+            <p><input checked type="checkbox" name="car2" value="yes"> Наличие авто 2</p>
+            <p><input type="checkbox" name="car3" value="yes"> Наличие авто 3</p>
+            <p><input checked type="checkbox" name="car4" value="yes"> Наличие авто 4</p>
+        </div>
+
+        <br>    
+        <div>
+            <p><input type="file" name="photo"></p>
+        </div>
+
+        <br>
+        <div>
+            <textarea name="text"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <select  name="color" >
+                <option value="red">Красный</option>
+                <option selected value="yellow">Желтый</option>
+                <option value="blue">Синий</option>
+            </select>
+        </div>
+
+        <br>
+        <div>
+            <button type="submit">Отправить</button>
+        </div>
     </body>
-
+ 
 </html>

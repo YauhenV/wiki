@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Формы практика</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>       
+    </head>
+
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!--Поле ввода логина-->
+            <div>
+                <p>Имя</p>
+                <input tabindex="1" placeholder="Login" name="user_name" type="text">
+            </div>
+            <!--Поле ввода пароля-->
+            <div>
+                <p>Пароль</p>
+                <input tabindex="2" placeholder="Password" name="user_pass" type="password">
+            </div>
+            <!--Поле ввода телефона-->
+            <div>
+                <p>Телефон</p>
+                <input tabindex="3" placeholder="Phone number" name="user_phone" type="tel">
+            </div>
+            <!--Поле выбора пола-->
+            <div>
+                <p>Ваш пол:</p>
+                <div>
+                    <input checked tabindex="4" type="radio" name="gender" value="male">Мужской
+                </div>
+                <div>
+                    <input tabindex="4" type="radio" name="gender" value="female">Женский
+                </div>
+            </div>
+            <!--Поле выбора имущества-->
+            <div>
+                <p>Ваше имущество:</p>
+                <div>
+                    <input checked tabindex="5" type="checkbox" name="bike" value="yes">Велик
+                </div>
+                <div>
+                    <input tabindex="6" type="checkbox" name="car" value="yes">Машина
+                </div>
+                <div>
+                    <input disabled tabindex="7" type="checkbox" name="house" value="yes">Дом
+                </div>
+            </div>
+            <!--Поле дополнительной информации-->
+            <div>
+                <p>Дополнительная информация</p>
+                <textarea tabindex="8" name="info"></textarea>
+            </div>
+            <!--Поле для загрузки фото-->
+            <div>
+                <p>Прикрепить фото</p>
+                <input tabindex="9" type="file" name="user_photo">
+            </div>
+            <!--Поле выбора цвета-->
+            <div>
+                <p>Любимый цвет</p>
+                <select tabindex="10" name="user_color">
+                    <option selected value="red">Красный</option>
+                    <option value="yellow">Желтый</option>
+                    <option value="green">Зеленый</option>
+                </select>
+            </div>
+            <!--Кнопки-->
+            <div>
+                <p>Действия</p>
+                <button tabindex="11" type="submit">Отправить</button>
+                <button tabindex="12" type="reset">Очитстить</button>
+            </div>
+        </form>
+    </body>
+ 
+</html>
