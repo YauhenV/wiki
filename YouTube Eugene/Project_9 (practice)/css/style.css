@@ -67,15 +67,16 @@ body{
 }
 
 .img{
+    margin: 29px 0 0 0;
     border: 5px solid #fff;
-    width: 821px;
-    height: 541px;
+    width: 30%;
+    height: 30%;
 }
 
 .text{
-    margin: 30px 30% 0 30%;
+    margin: 30px 30% 0 40%;
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 16px;
+    font-size: 12px;
     text-align: justify;
     color: #273d46;
     line-height: 25px;
@@ -87,7 +88,7 @@ body{
 
 .list{
     margin: 30px 0 0 30%;
-    font-size: 14px;
+    font-size: 10px;
     text-align: left;
     color: #273d46;
     line-height: 30px;
@@ -100,7 +101,7 @@ body{
 
 .list_color{
     font-style: italic;
-    color: #00FFFF;
+    color: #80b7b3;
 }
 
 .list_bold{
@@ -113,13 +114,15 @@ body{
 }
 
 .button{
-    margin: 30px 60% 20px 30%;
-    padding: 10px 10px 10px 30px;
-    font-size: 12px;
+    margin: 30px 63% 20px 30%;
+    padding: 10px 1px 10px 18px;
+    font-size: 7px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    background: #40E0D0 url(../img/icons/check\ icon.png) right no-repeat;
+    background: #80b7b3 url(../img/icons/Shape\ 2.png) no-repeat;
+    background-position: 80% 50%;
+    background-size: 10%;
     border-radius: 100px;
     overflow: visible;
 
