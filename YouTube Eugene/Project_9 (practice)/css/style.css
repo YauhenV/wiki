@@ -67,7 +67,60 @@ body{
 }
 
 .img{
-    border: 1px solid #000;
+    border: 5px solid #fff;
     width: 821px;
     height: 541px;
+}
+
+.text{
+    margin: 30px 30% 0 30%;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+    color: #273d46;
+    line-height: 25px;
+}
+
+.text p{
+    margin: 30px 0 0 0;
+}
+
+.list{
+    margin: 30px 0 0 30%;
+    font-size: 14px;
+    text-align: left;
+    color: #273d46;
+    line-height: 30px;
+}
+
+.list li{
+    padding: 0 0 0 30px;
+    background: url(../img/icons/check\ icon.png) left no-repeat;
+}
+
+.list_color{
+    font-style: italic;
+    color: #00FFFF;
+}
+
+.list_bold{
+    font-weight: 700;
+}
+
+.list_off{
+    color: #696969;
+    text-decoration: line-through;
+}
+
+.button{
+    margin: 30px 60% 20px 30%;
+    padding: 10px 10px 10px 30px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background: #40E0D0 url(../img/icons/check\ icon.png) right no-repeat;
+    border-radius: 100px;
+    overflow: visible;
+
 }
