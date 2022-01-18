@@ -221,6 +221,59 @@ grand - главный, выжный
 grandmother - бабушка
 
 
+Друзья Леры
+Притяжательный падеж (чей?) в английском. В русском языке мы меняем окончания: "друг Васи". В английском окончаний нет. 
+Этот вопрос решается добавлением 's или просто ' к слову.
+
+ед.число: слово's
+мн.число: слово'
+мн.число (исключения): слово's
+
+Книга мамы, друг Леры
+лицо+ 's = принадлежность предмета кому-то или чему-то
+mother's book - книги мамы
+Lera's friends - друзья Леры
+
+this is - единственное число
+This is my mother's book. (одна книга)
+
+there are - множественное число
+There are Lera's friends. (несколько друзей)
+
+Ставим артикль, если нет местоимения (мой, твой, наш и т.д)
+
+a - неопределенный артикль
+the -  определенный артикль
+
+This is a boy's book. - a boy's book (в первый раз слышу о мальчике)
+This is a boy and these are the boy's pencils. the bou's (второй раз упоминается о мальчике)
+
+Артикль ставится перед первым словом, определяющим предмет.
+
+'s во множественном числе добавляется к последнему имени
+Olga and Victor's flat
+
+Перед именем артикль не ставится 
+Olga and Victor's flat
+
+После слов во множественном числе ставится апостроф без s
+friends' pictures - фотографии друзей
+
+Множественное число в словах исключениях употребляется в +'s
+These are the children's toys. - Это игрушки детей.
+
+При использовании фамилии 
+the + фамилия + s
+
+the Ivanovs - семья Ивановых
+the Andersons - семья Андерсенов
+the Browns - семья Браунов
+
+При принадлежности к семье
+фамилия' - принадлежность семье
+This is the Ivanovs' child - Это ребёнок Ивановых.
+
+
 
 
 
@@ -574,3 +627,15 @@ Is she reading a magazine? — Она читает журнал?
 Are my children playing outside? — Мои дети играют на улице?
 Where are my children playing? — Где играют мои дети?
 What am I doing? — Что я делаю?
+
+
+
+Мастер класс по произношению: -ing и звук Н
+Назальный звук [ŋ] вызывает большие сложности у изучающих. Этот звук обычно встречается в двух сочетаниях:
+
+N + G = [ŋ] — taking, skiing, robbing, morning, evening, spring, slang, gang, bang, hang, song, long, young, wrong, among, lung, tongue
+
+N + K = [ŋk] — think, drink, blink, sink, pink, rink, link, sprinkle, wrinkle, bank, tank, punk, funk, trunk, monkey, thank, ankle
+
+Обратите особое внимание на слова, в которых произносится сразу 2 назальных звука:
+banging, hanging, bringing, singing, sinking, thinking, banking
