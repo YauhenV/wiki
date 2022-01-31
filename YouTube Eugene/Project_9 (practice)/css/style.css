@@ -43,80 +43,92 @@ body{
     background-color: #e8e8e8;
 }
 
-.header{
-    margin: 41px 0 0 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 7px;
-    line-height: 20px;
-    letter-spacing: 0.5em;
+.content{
+    padding: 168px 0 137px 0;
+    max-width: 841px;
+    margin: 0px auto;
+}
+
+.content-top{
+    text-align: center;
     color: #273d46;
+    margin-bottom: 65px;
+}
+.header{
+    font-size: 14px;
+    letter-spacing: 2.8px;
     text-transform: uppercase;
     opacity: 60%;
-    text-align: center;
-    line-height: 20px;
+    margin-bottom: 15px;
 }
-
 .title{
-    margin: 29px 0 0 0;
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 18px;
-    text-align: center;
-    color: #273d46;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 725px;
+    margin: 0px auto;
+    
 }
 
-.img{
-    margin: 29px 0 0 0;
-    border: 5px solid #fff;
-    width: 30%;
-    height: 30%;
+.content-image{
+    background: #fff;
+    box-shadow: 0px 15px 65px rgba(15, 16, 16, 0.15);
+    padding: 10px;
+    margin-bottom: 85px;
+}
+.content-image img{
+    max-width: 100%;
 }
 
 .text{
-    margin: 30px 30% 0 40%;
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 12px;
-    text-align: justify;
+    font-size: 24px;
+    text-align: left;
     color: #273d46;
-    line-height: 25px;
+    line-height: 40px;
+    max-width: 745px;
+    margin: 0px auto;
+    margin-bottom: 48px;
 }
 
 .text p{
-    margin: 30px 0 0 0;
+    margin-top: 40px;
 }
 
 .list{
-    margin: 30px 0 0 30%;
-    font-size: 10px;
-    text-align: left;
-    color: #273d46;
-    line-height: 30px;
+    margin-bottom: 75px;
 }
-
 .list li{
-    padding: 0 0 0 30px;
+    font-size: 20px;
+    text-align: left;
+    margin: 0px 0px 15px 45px;
+    padding: 0 0 0 35px;
     background: url(../img/icons/check\ icon.png) left no-repeat;
 }
-
+.list li:nth-child(1){
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    color: #273d46;
+}
 .list_color{
     font-style: italic;
     color: #80b7b3;
 }
-
 .list_bold{
+    color: #273d46;
     font-weight: 700;
 }
-
 .list_off{
     color: #696969;
     text-decoration: line-through;
 }
+.list li:last-child{
+    margin-bottom: 0px;
+}
 
 .button{
-    margin: 30px 63% 20px 30%;
-    padding: 10px 1px 10px 18px;
-    font-size: 7px;
+    margin-left: 45px;
+    padding: 12px 72px 15px 18px;
+    font-size: 14px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -125,5 +137,5 @@ body{
     background-size: 10%;
     border-radius: 100px;
     overflow: visible;
-
+    box-shadow: 0px 6px 40px #80b7b3;
 }
