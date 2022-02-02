@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*,:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+body{
+    padding: 30px;
+}
+.block {
+        margin: 0px 0px 30px 0px;
+}
+
+.block p{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 20px 0;
+}
+
+.block p:last-child{
+    text-transform: uppercase;
+}
+
+.block p:last-child:hover{
+    background: red;
+}
+
+.block p:nth-child(odd){
+    background-color: yellow;
+}
+
+.block p:nth-child(even){
+    background-color: green;
+}
+
+.link {
+    color: red;
+}
+
+.link:visited{
+    color: green;
+}
+
+.link:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.link:active{
+    color: yellow;
+}
+
+.text-input {
+    border: 1px solid #666;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+.text-input:focus{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.text-button {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: #666;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+}
+
+.text-button:hover{
+    background-color: #333;
+    color: yellow;
+}
+
+.text-button:active{
+    background-color: #eee;
+}
+
+.list li {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+.list li:first-child{
+    color: green;
+}
+
+.list li:last-child{
+    color: yellow;
+    font-weight: 700;
+}
+
+.list li:nth-child(4){
+    text-decoration: underline;
+}
+
