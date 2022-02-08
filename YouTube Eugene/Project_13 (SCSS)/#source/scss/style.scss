@@ -1,0 +1,67 @@
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//Перменные для блока
+$fz:20px;
+$color_1:green;
+$color_2:blue;
+
+//Шаблон
+%tplborder{
+    border-bottom: 5px dashed red;
+}
+
+//Миксин или примесь
+@mixin fontz($f,$c) {
+    font-size: $f;
+    color: $c;
+    
+}
+
+.block{
+    width: 300px/960px*100%;
+    background-color: #666;
+    padding: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    >p{
+        color: red;
+    }
+    .block-text{
+        font-size: $fz;
+        span{
+            color: color_1;
+        }
+    }
+    &.block-big{
+        font-size: $fz;
+    }
+    
+}
+
+.link{
+    color: color_2;
+    text-decoration: underline;
+    font-size: 20px;
+
+    .block &{
+        font-size: 5
+        0px;
+    }
+
+    &:hover{
+        color: red;
+    }
+    &::before{
+        content: '';
+    }
+    &::after{
+        content: '';
+    }
+    @extend %tplborder;
+}
+
+.link-2{
+    @include fontz(100px,green);
+    @extend %tplborder;
+}
