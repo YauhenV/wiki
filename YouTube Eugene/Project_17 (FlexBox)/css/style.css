@@ -237,6 +237,109 @@ body {
   line-height: 1.5;
 }
 
+.vertical {
+  padding: 40px 0px;
+}
+.vertical_btm {
+  font-size: 18px;
+  color: #445161;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  padding: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+.vertical__title {
+  text-align: center;
+}
+.vertical__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+.vertical__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.vertical__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  min-width: 300px;
+  background: #445162;
+  border-radius: 5px;
+  margin: 25px;
+}
+.vertical__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.vertical__subtitle {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.vertical__label {
+  background: #fff;
+  font-size: 40px;
+  color: #445162;
+  line-height: 0.75;
+  text-align: center;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #445162;
+}
+.vertical__text {
+  font-size: 14px;
+  color: white;
+  line-height: 1.714;
+  text-align: left;
+  padding: 10px 20px 0px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.vertical__text p {
+  margin-bottom: 30px;
+}
+.vertical__text p:last-child {
+  margin-bottom: 0px;
+}
+
 .footer {
   background-color: #f5f5f5;
 }
