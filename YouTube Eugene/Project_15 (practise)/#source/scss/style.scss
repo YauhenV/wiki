@@ -1,0 +1,128 @@
+
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//Подключаем шрифты
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@font-face {
+    font-family: 'Myriad Pro Light Italic';
+    src: url('MyriadPro-LightIt.eot');
+    src: url('MyriadPro-LightIt.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-LightIt.woff') format('woff'),
+    url('MyriadPro-LightIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+//Шрифт по умолчанию
+$fontfamily:"Lato";
+
+//Переменные по умолчанию
+$mw:1100px;
+
+body{
+    font-family: $fontfamily;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.content{
+    max-width: $mw;
+    margin: 0px auto;
+}
+
+.main-header {
+    //фоновое изображение
+    background-image: url(../../img/BG-Header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+    
+    color: #fff;
+
+    padding: 100px 0px 0px 0px;
+    flex: 1 1 auto;
+
+    text-align: center;
+
+    //justify-content: center;
+    //align-items: center;
+
+        &__content{
+            max-width: $mw;
+            margin: 0px auto;
+        }
+
+        &__logo {
+            text-align: center;
+            padding-bottom: 150px;
+        }
+
+		&__title {
+            max-width: 750px;
+            margin: 0px auto;
+        }
+
+        &__main-title {
+            font-size: 34px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            line-height: 1.176;
+            padding: 0px 0px 15px 0px;
+        }
+        
+        &__subtitle {
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            margin: 0px 0px 200px 0px;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100px;
+                bottom: 0px;
+                height: 2px;
+                left: 50%;
+                background: #fff;
+                margin: 0px 0px -45px -50px;
+            }
+
+        }
+
+		&__btm {
+            display: block;
+            max-width: 180px;
+            margin: 0px auto;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px 30px;
+
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+		}
+
+		&__arrow {
+            display: block;
+            max-width: 10px;
+            margin: 0px auto;
+            padding: 70px 0px 100px 0px; 
+		}
+
+    
+}
+
+
