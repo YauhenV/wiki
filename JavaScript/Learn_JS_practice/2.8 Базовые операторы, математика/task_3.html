@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert (typeof ("" + 1 + 0))//string +
+        alert (typeof ("" - 1 + 0))//number +
+        alert (typeof (true + false))//boolean - (number)
+        alert (typeof (6 / "3"))//number + 
+        alert (typeof ("2" * "3"))//number + 
+        alert (typeof (4 + 5 + "px"))//string + 
+        alert (typeof ("$" + 4 + 5))//string +
+        alert (typeof ("4" - 2))//number +
+        alert (typeof ("4px" - 2))//NaN - (number)
+        alert (typeof (7 / 0))//NaN - (number)
+        alert (typeof ("  -9  " + 5))//string +
+        alert (typeof ("  -9  " - 5))//number + 
+        alert (typeof (null + 1))//number + 
+        alert (typeof (undefined + 1))//number + 
+        alert (typeof (" \t \n" - 2))//NaN - (number)
+    </script>
+</body>
+</html>
