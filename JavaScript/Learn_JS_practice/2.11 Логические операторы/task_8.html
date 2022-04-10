@@ -8,7 +8,9 @@
 </head>
 <body>
     <script>
-        alert ( null || 2 || undefined );
+        if (-1 || 0) alert( 'first' );//-1 Yes
+        if (-1 && 0) alert( 'second' );// 0 No
+        if (null || -1 && 1) alert( 'third' );//1 Yes
     </script>
 </body>
 </html>
