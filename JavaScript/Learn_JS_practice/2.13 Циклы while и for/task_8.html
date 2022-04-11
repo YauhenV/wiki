@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*Мне нужно перебрать все числи с 2 до n-1 и если при делении остаток равен нулю, значит это не простое число*/
+        let i = 0;
+        let a = 0;
+        let n = prompt ('Введите до какого числа вывести все простые числа', '10');
+
+        for (; i <= n; i++){
+            a = 0;
+            if (i == 2) {alert (`Простое число 2 ${i}`);
+            }
+            for (let x = 2; x < i; x++){
+                if (i % x == 0) break;
+                a++;
+                if (a == i - 2){
+                    alert (`Простое число ${i}`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
