@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      "use strict";
+      function truncate(str, maxLength) {
+        console.log (maxLength, str.length)
+        if (maxLength <= str.length) {
+          let word = str.slice(0,19) + "...";
+          return word;
+        } else return str;
+      };
+
+      let str = prompt('You string', '');
+      let maxLength = prompt ('You length', '10');
+
+      alert (truncate(str, maxLength));
+
+      //My wife is very nice girl and very beatiful
+
+    </script>
+</body>
+</html>
