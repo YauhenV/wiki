@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //"use strict";
+      
+      function sumInput() {
+        let sum = [];
+        let sumNum = 0;
+
+        while (true) {
+          let i = prompt ('Введите числа для суммирования','');
+          if (i === '' || i === null || isNaN (i)) {
+            break;
+          } else {
+            sum.push(+i);
+          }
+        };
+
+        for (let x = 0; x < sum.length; x++) {
+          sumNum += sum[x];
+        };
+        return sumNum;
+      };
+    
+      console.log(sumInput());
+
+    </script>
+</body>
+</html>
