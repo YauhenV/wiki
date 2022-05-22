@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //"use strict";
+      
+      function unique(arr) {
+        let newString = [];
+        let a = arr.length;
+        for (i = 0; i <= a; i++) {
+          if (!newString.includes(arr[0])) {
+            newString.push(arr[0]);
+          };
+          arr.splice(arr[0], 1);
+        };
+
+        return newString;
+      };
+
+      let strings = ["кришна", "кришна", "харе", "харе",
+        "харе", "харе", "кришна", "кришна", ":-O"
+      ];
+
+      alert( unique(strings) ); // кришна, харе, :-O
+    </script>
+</body>
+</html>
