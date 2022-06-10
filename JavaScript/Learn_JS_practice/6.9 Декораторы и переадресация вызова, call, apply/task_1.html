@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      "use strict";
+      /*
+      //С использованием цикла
+      function sumTo(number) {
+        let sum = 0;
+        for (let i = number; i >= 1; i-- ) {
+          sum += i;
+        }
+        return sum;
+      }
+      */
+      /*
+      //Через рекурсию
+      function sumTo(number) {
+        /*
+        if (number == 1) {
+          return number;
+        } else {
+          return number + sumTo(number-1);
+        }
+        
+        return (number == 1) ? number : number + sumTo(number - 1);
+      }
+      */
+
+
+      //Через формулу 
+      function sumTo(number) {
+        return (number * (number + 1)) / 2;
+      }
+
+      alert (sumTo(100));
+    </script>
+</body>
+</html>

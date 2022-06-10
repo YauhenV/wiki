@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      "use strict";
+      
+      let users = [
+        { name: "John", age: 20, surname: "Johnson" },
+        { name: "Pete", age: 18, surname: "Peterson" },
+        { name: "Ann", age: 19, surname: "Hathaway" }
+      ];
+
+      function byField (value) {
+        return (a, b) => a[value] > b[value] ? 1 : -1;
+      }
+
+      users.sort(byField('name'));
+      users.forEach(user => alert(user.name));
+      users.sort(byField('age'));
+      users.forEach(user => alert(user.name));
+
+
+    </script>
+</body>
+</html>

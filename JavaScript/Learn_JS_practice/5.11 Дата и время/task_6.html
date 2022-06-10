@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      "use strict";
+      
+      function getSecondsToday(){
+        let todaySeconds = new Date();
+        let second = (todaySeconds.getHours() * 3600) + (todaySeconds.getMinutes() * 60) + (todaySeconds.getSeconds());
+        return second;
+      }
+
+      alert( getSecondsToday() );
+
+    </script>
+</body>
+</html>
