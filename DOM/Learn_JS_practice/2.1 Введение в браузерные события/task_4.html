@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      #field {
+        width: 200px;
+        height: 150px;
+        border: 10px solid black;
+        background-color: #00FF00;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #ball {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 1s all;
+      }
+      
+    </style>
+  </head>
+  
+  <body style="height:2000px">
+
+    Нажмите на поле для перемещения мяча.
+    <br> Мяч не должен выходить за границы поля.
+  
+  
+    <div id="field">
+      <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    </div>
+  
+    <script>
+      let ball = document.querySelector("#ball");
+      let field = document.querySelector("#field");
+
+      let fieldCoords = field.getBoundingClientRect();
+
+      //Находим края поля
+      let fieldTop = fieldCoords.top + field.clientTop;
+      let fieldLeft = fieldCoords.left + field.clientLeft;
+      let FieldBottom = fieldCoords.bottom - field.clientTop;
+      let fieldRight = fieldCoords.right - field.clientLeft;
+
+      console.log(fieldTop, fieldLeft, FieldBottom, fieldRight);
+      console.log(field.clientLeft, field.clientTop)
+
+
+      field.onclick = function(event) {
+        let coordX = event.clientX;
+        let coordY = event.clientY;
+
+        if (coordX < (fieldLeft + 2 + ball.clientWidth / 2)) {
+          console.log(coordX, fieldLeft)
+          ball.style.left = fieldLeft - fieldLeft + "px";
+          ball.style.top = coordY - 70 + "px";
+        }
+        else if (coordX > (fieldRight - 2 - ball.clientWidth / 2)) {
+          console.log(coordX, fieldRight)
+          ball.style.left = fieldRight - 58 + "px";
+          ball.style.top = coordY - 70 + "px";
+        } else if (coordY < (fieldTop + 2 + ball.clientHeight / 2)) {
+          console.log(coordY, fieldTop)
+          ball.style.left = coordX - ball.clientWidth + "px";
+          ball.style.top = fieldTop - 55 + "px";
+        } else if (coordY > (FieldBottom - 2 - ball.clientHeight / 2)) {
+          console.log(coordY, FieldBottom)
+          ball.style.left = coordX - ball.clientWidth + "px";
+          ball.style.top = FieldBottom - 95 + "px";
+        } else {
+          ball.style.left = coordX - ball.clientWidth + "px";
+          ball.style.top = coordY - 70 + "px";
+        }
+
+        
+
+
+        //  console.log(event.clientX + " : " + event.clientY);
+      }
+
+    </script>
+  
+  </body>
+
+</html>

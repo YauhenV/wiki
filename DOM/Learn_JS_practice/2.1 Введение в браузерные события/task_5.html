@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    
+    <style>
+      ol, ul {
+      	list-style: none;
+        display: none;
+      }
+      li {
+        margin-left: 25px;
+      }
+      .list{
+        display: inline-block;
+      }
+      .openList {
+        color: green;
+        display: none;
+      }
+      .closeList {
+        color: green;
+        display: inline-block;
+      }
+    </style>
+
+  </head>
+  
+  <body>
+
+    <div class="list">
+      <div class="closeList">▶</div>
+      <div class="openList">▼</div>Сладости (нажми меня)!
+    </div>
+    <ul>
+      <li>Пирожное</li>
+      <li>Пончик</li>
+      <li>Мёд</li>
+    </ul>
+
+    <script>
+      let list = document.querySelector(".list");
+      let listClose = document.querySelector(".closeList");
+      let listOpen = document.querySelector(".openList");
+      let flag = false;
+
+      let ul = document.querySelector("ul");
+
+      function openList() {
+        if (flag) {
+          listClose.style.display = "inline-block";
+          listOpen.style.display = "none";
+          ul.style.display = "none";
+        } else {
+          listClose.style.display = "none";
+          listOpen.style.display = "inline-block";
+          ul.style.display = "initial";
+        }
+        flag = !flag;
+      } 
+
+      function closeList() {
+        listClose.style.display = "inline-block";
+        listOpen.style.display = "none";
+        ul.style.display = "none";
+      } 
+
+      list.addEventListener("click", openList, true);
+      
+
+    </script>
+
+  
+  </body>
+
+</html>

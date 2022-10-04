@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="messages.css">
+
+
+    <style>
+      .selected {
+        background: #0f0;
+      }
+  
+      li {
+        cursor: pointer;
+      }
+    </style>
+
+    <title>Task</title>
+</head>
+
+<body>
+
+  Кликни на элемент списка, чтобы выделить его.
+  <br>
+
+  <ul id="ul">
+    <li>Кристофер Робин</li>
+    <li>Винни Пух</li>
+    <li>Тигра</li>
+    <li>Кенга</li>
+    <li>Кролик. Просто Кролик.</li>
+  </ul>
+
+  <script>
+    function selectedLi(event) {
+      if (event.ctrlKey || event.metaKey) {
+        event.target.classList.add("selected");
+      } else {
+        let childrenLi = event.target.parentNode.querySelectorAll('li');
+        for (li of childrenLi) {
+          console.log(li);
+          li.classList.remove("selected");
+        }
+
+        event.target.classList.add("selected");
+
+      }
+
+
+    }
+
+    function offDblClick() {
+      this.onmousedown = function() {
+        return false;
+      }
+    }
+   
+   ul.addEventListener("click", selectedLi);
+
+   ul.addEventListener("click", offDblClick);
+   ul.addEventListener("dblclick", offDblClick);
+
+  </script>
+
+</body>
+
+</html>

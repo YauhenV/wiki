@@ -1,0 +1,53 @@
+
+//Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background: #373B44;  /* fallback for old browsers */
+   
+    background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin-top: 20px;
+    
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.content {
+  margin: 0px auto;
+  background-color: #A1AFBA;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100px;
+  width: 500px;
+
+}
+.search {
+  margin: 0px auto;
+  
+
+		&__form {
+      
+		}
+
+    &__input {
+      width: 300px;
+      
+		}
+
+    &__button {
+      margin-left: 20px;
+      padding: 5px;
+      
+		}
+}
+

@@ -1,0 +1,21 @@
+<html>
+
+<body>
+  <ul>
+
+  </ul>
+
+  <script>
+    let ul = document.querySelector('ul');
+    while (true){
+      let userDate = prompt("Что добавляем в список?", "");
+      if (userDate == null || userDate == "") break;
+      let li = document.createElement('li');
+      li.textContent = userDate;
+      ul.prepend(li);
+    }
+
+  </script>
+</body>
+
+</html>

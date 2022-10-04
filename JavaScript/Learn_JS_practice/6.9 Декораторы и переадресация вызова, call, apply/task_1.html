@@ -9,37 +9,30 @@
 <body>
     <script>
       "use strict";
-      /*
-      //С использованием цикла
-      function sumTo(number) {
-        let sum = 0;
-        for (let i = number; i >= 1; i-- ) {
-          sum += i;
-        }
-        return sum;
+      function work(a, b) {
+        alert( a + b ); // произвольная функция или метод
       }
-      */
-      /*
-      //Через рекурсию
-      function sumTo(number) {
-        /*
-        if (number == 1) {
-          return number;
-        } else {
-          return number + sumTo(number-1);
+      
+      function spy(func) {
+
+        function wrapper(...args) {
+          wrapper.calls.push(args);
+          return func.apply(this, arguments);
         }
         
-        return (number == 1) ? number : number + sumTo(number - 1);
-      }
-      */
+        wrapper.calls = [];
 
-
-      //Через формулу 
-      function sumTo(number) {
-        return (number * (number + 1)) / 2;
+        return wrapper;
       }
 
-      alert (sumTo(100));
+      work = spy(work);
+      
+      work(1, 2); // 3
+      work(4, 5); // 9
+      
+      for (let args of work.calls) {
+        alert( 'call:' + args.join() ); // "call:1,2", "call:4,5"
+      }
     </script>
 </body>
 </html>

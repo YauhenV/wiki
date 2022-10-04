@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Myriad Pro Light Italic";
+  src: url("MyriadPro-LightIt.eot");
+  src: url("MyriadPro-LightIt.eot?#iefix") format("embedded-opentype"), url("MyriadPro-LightIt.woff") format("woff"), url("MyriadPro-LightIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Lato";
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.main-header {
+  background-image: url(../../img/BG-Header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  color: #fff;
+  padding: 80px 0px 0px 0px;
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.main-header__content {
+  position: relative;
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 40px 0px;
+}
+.main-header__main-title {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 1.176;
+  padding: 0px 0px 15px 0px;
+}
+.main-header__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0px 0px 50px 0px;
+  position: relative;
+}
+.main-header__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  height: 2px;
+  left: 50%;
+  background: #fff;
+  margin: 0px 0px -45px -50px;
+}
+.main-header__footer {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: space-between;
+}
+.main-header__btm {
+  position: relative;
+  max-width: 180px;
+  margin: 10px auto;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main-header__arrow {
+  position: relative;
+  -webkit-animation: arrow 2s infinite ease;
+          animation: arrow 2s infinite ease;
+}
+
+.content {
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
+}
+
+.menu {
+  padding: 22px 0px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.menu_md {
+  margin: 0px 0px 130px 0px;
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__link {
+  margin: 0px 25px;
+  font-size: 15px;
+  color: #3c3c3c;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.menu__link:hover {
+  color: rgb(173, 160, 116);
+}
+.menu__link_act {
+  color: rgb(173, 160, 116);
+}
+
+.about {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.about__header-text {
+  font-size: 14px;
+  color: rgb(134, 133, 133);
+  line-height: 1.857;
+  font-weight: 300px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about__body {
+  padding: 70px 0px 0px 0px;
+}
+.about__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__img {
+  border: 10px solid #f0f0f0;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+}
+.about__body-title {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+.about__body-text {
+  font-size: 14px;
+  color: rgb(134, 133, 133);
+  line-height: 1.857;
+}
+
+.header-block {
+  text-align: center;
+}
+
+.title {
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 8.95px;
+  position: relative;
+  margin: 0px 0px 70px 0px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  bottom: 0px;
+  left: 50%;
+  background-color: #000;
+  margin: 0px 0px -30px -40px;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

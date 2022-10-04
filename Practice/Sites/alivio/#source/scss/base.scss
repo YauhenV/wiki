@@ -1,0 +1,63 @@
+body {
+    font-family: "lato" sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background: #fff;
+    color: #424242;
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -100000px;
+    background: transparent;
+    font-size: 0;
+}
+
+/* Grid */
+.container {
+    max-width: 1400px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.button a{
+    display: inline-block;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 50px;
+
+    &:hover,
+    &:focus,
+    &:active { 
+      opacity: 0.75;
+    }
+}
+.title {
+    font-family: 'Georgia', serif;
+	font-style: normal;
+	font-weight: 700;
+	color: #01996D;
+}
+
+/* Import scss blocks */
+@import "header";
+@import "home";
+@import "how-works";
+@import "story";
