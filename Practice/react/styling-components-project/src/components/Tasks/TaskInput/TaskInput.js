@@ -64,6 +64,7 @@ const TaskInput = (props) => {
     }
 
     props.onAddTask(inputText);
+    setInputText("");
   };
 
   return (
@@ -80,7 +81,7 @@ const TaskInput = (props) => {
 
       <div className={`${styles["form-control"]} ${!isInputValid && styles.invalid}`}>
         <label>Задачи</label>
-        <input type="text" onChange={taskInputChangeHandler} />
+        <input type="text" onChange={taskInputChangeHandler} value={inputText} />
       </div>
       <Button type="submit">Добавить Задачу</Button>
     </form>
