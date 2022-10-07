@@ -20,6 +20,7 @@
 .input-form__wrap {
   margin: 0 auto;
   width: 80%;
+  position: relative;
 }
 
 .input-form__input-title {
@@ -36,4 +37,14 @@
   border-radius: 5px;
   border: none;
   box-shadow: 3px 3px 5px 0px rgba(41, 41, 233, 0.15);
+}
+
+.pop-up-none-frame__none {
+  display: none;
+}
+
+.pop-up-none-frame__active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
