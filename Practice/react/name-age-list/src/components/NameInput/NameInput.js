@@ -10,7 +10,7 @@ const NameInput = (props) => {
   }
 
   const ageInputChangeHandler = (event) => {
-      setAge(event.target.value);
+    setAge(event.target.value);
   }
 
   const formSubmitHandler = (event) => {
