@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../UI/Card/Card";
 import styles from "./Home.module.css";
 
-const Home = (props) => {
+const Home = () => {
   return (
     <Card className={styles.home}>
       <h1>Рады Вас Видеть Снова!</h1>
