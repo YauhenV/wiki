@@ -31,6 +31,12 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
+}
+
 .button a{
     display: inline-block;
     background: #01996D;
@@ -49,6 +55,14 @@ body {
       opacity: 0.75;
     }
 }
+
+@media (max-width: 991px) {
+    .button a{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}
+
 .title {
     font-family: 'Georgia', serif;
 	font-style: normal;
@@ -61,3 +75,5 @@ body {
 @import "home";
 @import "how-works";
 @import "story";
+@import "product";
+@import "footer";

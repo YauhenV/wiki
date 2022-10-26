@@ -36,14 +36,42 @@
 			z-index: -1;
 			width: 100%;
 			height: 100%;
-			background-color: bisque;
+			background-color: #fff;
 
 			& img{
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-			}
-      
+			} 
 		}
+}
+
+@media (max-width: 1399px) {
+	.home {
+		margin-bottom: 80px;
+	}
+}
+
+@media (max-width: 991px) {
+	.home {
+		padding: 40px 0px;
+		min-height: unset;
+		margin-bottom: 40px;
+
+		&__bg-img {
+			opacity: 0.5;
+		}
+
+		&__title {
+			font-size: 45px;
+			line-height: 1.2;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
 }
 

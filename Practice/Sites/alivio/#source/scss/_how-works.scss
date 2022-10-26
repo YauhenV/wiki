@@ -122,3 +122,55 @@
       padding-left: 124px;
   }
 }
+
+@media (max-width: 1399px) {
+  .how-works {
+    margin-bottom: 30px;
+  
+    &__header {
+      padding-bottom: 0px;
+    }
+
+    &__header-subtitle {
+      font-size: 45px;
+      line-height: 130%;
+    }
+
+    &__header-text {
+      padding-top: 20px;
+    }
+    &__step {
+      margin-right: 45px;
+    }
+
+    &__step:nth-child(2),
+    &__step:last-child {
+      margin-top: 0px;
+    }
+    
+    
+  }
+
+  .step {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    &__text {
+      max-width: 390px;
+      flex: 1 1 auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .step {
+
+    &__text {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

@@ -95,3 +95,34 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+
+    &__wrapper {
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-right: 30px;
+    }
+
+    &__item {
+      margin-right: 50px;
+    }
+
+    &__login-button {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+
+    &__nav,
+    &__login-button{
+      display: none;
+    }
+  }
+}

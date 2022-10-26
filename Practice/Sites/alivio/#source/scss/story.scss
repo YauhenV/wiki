@@ -11,9 +11,9 @@
 
   &__row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 20px
   }
 
   &__content {
@@ -47,9 +47,9 @@
   &__video {
     width: 895px;
     position: relative;
+    overflow: hidden;
+    border-radius: 18px;
   }
-
-  
 
   &__video-button {
     position: absolute;
@@ -69,7 +69,57 @@
   }
 
   &__video-object {
-
   }
 }
 
+@media (max-width: 1506px) {
+  .story {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1199px) {
+  .story {
+    padding: 90px 0 90px;
+
+    &__row {
+      flex-direction: column-reverse;
+    }
+
+    &__video {
+      margin-bottom: 40px;
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+      font-size: 40px;
+      line-height: 130%;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 130%;
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .story {
+    padding: 60px 0 60px;
+
+    &__heading {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 120%;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 130%;
+      margin-bottom: 30px;
+    }
+  }
+
+}
