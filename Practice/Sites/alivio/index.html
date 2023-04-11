@@ -53,10 +53,47 @@
           </a>
         </div>
 
+        <button type="button" class="mobile-nav-button">
+          <span class="mobile-nav-button__icon"></span>
+        </button>
+
       </div>
     </div>
   </header>
   <!--Header end-->
+
+  <!--Mobile navigation start-->
+  <div class="mobile-nav">
+    <img src="./img/Logo_header.svg" alt="Logo" class="mobile-nav__logo">
+
+    <nav class="mobile-nav__nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a href="#!" class="mobile-nav__link">Why Alivio</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#!" class="mobile-nav__link">Solutions</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#!" class="mobile-nav__link">Community</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#!" class="mobile-nav__link">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav__login-button">
+      <a href="#!" class="mobile-nav__sign-in-link">
+        Sign in
+      </a>
+      <a href="#!" class="mobile-nav__start-trial-link button">
+        <span>Start Trial</span>
+      </a>
+    </div>
+
+  </div>
+  <!--Mobile navigation end-->
 
   <main class="main">
     <!--Home start-->
@@ -78,7 +115,7 @@
         </div>   
       </div>
       <div class="home__bg-img">
-        <img src="./img/BG.jpg" alt="Alivio-home-background">
+        <img src="./img/BG-min.jpg" alt="Alivio-home-background">
       </div>
     </section>
     <!--Home end-->
@@ -113,7 +150,7 @@
                 </p>
               </div>
               <div class="step__img">
-                <img src="./img/step/Step1.jpg" alt="Step-01_Personalize">
+                <img src="./img/step/Step1-min.jpg" alt="Step-01_Personalize">
               </div>
             </div>
 
@@ -127,7 +164,7 @@
                 </p>
               </div>
               <div class="step__img">
-                <img src="./img/step/Step2.jpg" alt="Step-02_Write&Understand">
+                <img src="./img/step/Step2-min.jpg" alt="Step-02_Write&Understand">
               </div>
             </div>
 
@@ -142,7 +179,7 @@
                 </p>
               </div>
               <div class="step__img">
-                <img src="./img/step/Step3.jpg" alt="Step-03-Alivio!">
+                <img src="./img/step/Step3-min.jpg" alt="Step-03-Alivio!">
               </div>
             </div>
         </div>
@@ -157,7 +194,7 @@
         <div class="story__row">
           <div class="story__content">
             <div class="story__heading">
-              Let's hear about Kayla's success story
+              <h3>Let's hear about Kayla's success story</h3>
             </div>
             <div class="story__text">
               <p>See how well Alivio works in a real customer’s life.</p> 
@@ -167,12 +204,15 @@
             </div>
           </div>
           <div class="story__video">
-            <div class="story__video-overlay">
-              <button class="story__video-button">
-                <img src="./img/story/play-white.svg" alt="play-button">
+            <div id="story__video-overlay" class="story__video-overlay">
+              <button id="story__video-button" class="story__video-button">
+                <img id="story__video-button-icon" width="82" height="82" src="./img/story/play-white.svg" alt="play-button">
               </button>
             </div>
-            <img src="./img/story/story.jpg" alt="Kayla's success story" class="story__video-object">
+            <!-- <img src="./img/story/story.jpg" alt="Kayla's success story" class="story__video-object"> -->
+            <video class="story__video-object" id="video-story">
+              <source src="./video/customer-story.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
@@ -184,7 +224,7 @@
       <div class="container">
         <div class="product__row">
           <div class="product__img-wrapper">
-            <img src="./img/product/product-image.png" alt="Our product" class="product__img">
+            <img src="./img/product/product-image-min.png" alt="Our product" class="product__img">
 
             <div class="product__card">
               <div class="card">
@@ -192,7 +232,7 @@
 
                 <div class="card__avatar">
                   <div class="avatar">
-                    <img class="avatar__img" src="./img/product/avatar.jpg" alt="Product Avatar">
+                    <img class="avatar__img" src="./img/product/avatar-min.jpg" alt="Product Avatar">
                     <div class="avatar__name">Mikayla</div>
                   </div>
                 </div>
@@ -215,13 +255,15 @@
               Everyone experiences it, and in different ways.<br>
               Let Alivio guide you, in a personalized journal experience, to overcome your stress.
             </div>
-            <button class="button"><a href="#">Find Your Way</a></button>
+            <div class="button"><a href="#">Find Your Way</a></div>
 
           </div>
         </div>
       </div>
     </section>
     <!--Product end-->
+  </main>
+
 
     <!--Footer start-->
     <footer class="footer">
@@ -242,8 +284,7 @@
     </footer>
     <!--Footer end-->
 
-
-  </main>
+    <script src="./js/main-es6.js"></script>
 
 </body>
 

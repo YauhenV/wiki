@@ -70,6 +70,10 @@ body {
 	color: #01996D;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Import scss blocks */
 @import "header";
 @import "home";
@@ -77,3 +81,5 @@ body {
 @import "story";
 @import "product";
 @import "footer";
+@import "mobile-nav-button";
+@import "mobile-nav"

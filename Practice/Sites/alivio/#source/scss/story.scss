@@ -59,6 +59,7 @@
   }
   
   &__video-overlay {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
@@ -66,15 +67,28 @@
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease;
+
+  }
+
+  &__video-overlay.hidden {
+    opacity: 0;
   }
 
   &__video-object {
+    max-width: 100%;
+    height: auto; 
+    vertical-align: top;
   }
 }
 
 @media (max-width: 1506px) {
   .story {
     width: 100%;
+
+    &__video {
+      width: 100%;
+    }
   }
 
 }
